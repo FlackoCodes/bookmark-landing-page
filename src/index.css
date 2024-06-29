@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    background: hsl(207, 33%, 95%);
+}
+
+nav,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Barlow Condensed", sans-serif;
+
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+li{
+    list-style-type: none;
+}
+
+nav{
+    display: none;
+}
+
+img{
+    max-width: 100% !important;
+}
+
+.nav-list-desktop{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list-desktop ul{
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+}
+
+.nav-list-desktop ul li:hover{
+    text-decoration: underline;
+}
+
+.period,
+.login{
+    color: hsl(231, 7%, 65%);
+}
+
+.nav-list-mobile{
+    display: none;
+    text-align: center;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%);
+    margin: 20px 20px 0 20px;
+}
+
+.nav-list-mobile ul li{
+    padding: .5rem 0;
+}
+
+.nav-list-mobile .login{
+    border-top: 1.2px solid hsl(0, 0%, 83%);
+}
+
+
+
+.mobile-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+/* css class to toggle mobile menu */
+.overlay{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    background-color: hsl(0, 100%, 68%);
+    margin-right: 5px;
+}
+
+.demo p{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.hero-img{
+    margin: 50px 0;
+}
+
+.reverse{
+    padding-left: 30px;
+}
+
+.h__{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.ls-p{
+    color: hsl(0, 0%, 50%);
+}
+
+.n__p span{
+    background: hsl(230, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    margin-right: 5px;
+    padding: 0.3rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.n__p{
+    color: hsl(0, 0%, 50%);
+    text-transform: uppercase;
+}
+
+.demo{
+    margin: 20px 0;
+}
+
+.demo p{
+    padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    .reverse{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .hero-img img{
+        width: 600px;
+        height: auto;
+    }
+}
