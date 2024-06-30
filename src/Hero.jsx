@@ -8,13 +8,15 @@ function Hero() {
                 <img src={devices} alt="image of phone and laptop" />
             </div>
             <div className='cta'>
-                <div className='h__'>
+                <div className='h__'
+                style={styles}
+                >
                     <p className='n__p'>
                         <span>New</span>
                         Monograph Dashboard
                         </p>
-                    <h1>Powerful insights <br />
-                     into your team </h1>
+                    <h1>Powerful insights <span className='span'>into your team </span>
+                     </h1>
                     <p className='ls-p'> 
                         Project planning and time 
                         tracking for agile teams
@@ -30,3 +32,9 @@ function Hero() {
 }
 
 export default Hero
+
+let styles = {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem'
+}
