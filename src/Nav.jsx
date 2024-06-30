@@ -1,8 +1,16 @@
+import { useState } from 'react'
 import logo from './images/logo.svg'
 import hamburger from './images/icon-hamburger.svg'
+import iconClose from './images/icon-close.svg'
 
 
 function Nav() {
+    const [isOpen, setIsOpen] = useState(false)
+
+const toggleMenu = ()=>{
+    setIsOpen(!isOpen)
+}
+
   return (
     <div>
         <header>
@@ -28,7 +36,10 @@ function Nav() {
                 </div>
                 <div>
                     <div>
-                        <img src={hamburger} alt="hamburger-menu" />
+                        <img
+                        onClick={toggleMenu}
+                         src={hamburger} 
+                         alt="hamburger-menu" />
                     </div>
                 </div>
             </div>

@@ -36,7 +36,7 @@ nav{
 }
 
 img{
-    max-width: 100% !important;
+    max-width: 100%;
 }
 
 .nav-list-desktop{
@@ -160,25 +160,43 @@ a{
         display: block;
     }
 
-    .reverse{
-        width: 85%;
-        margin: 0 auto;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 1.5rem;
-    }
-
-    .h__{
-        margin-top: 70px;
-    }
-
-    .hero-img img{
-        width: 600px;
-        height: auto;
-    }
-
     .span{
         display: block;
     }
+
+    .h__{
+        margin-top: 50px;
+    }
+
+    .hero-img img{
+        width: 400px;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 }
+
+@media screen and (min-width: 1020px) {
+
+.reverse{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+}
+
+.h__{
+    margin-top: 70px;
+}
+
+.hero-img img{
+    width: 600px;
+    height: auto;
+}
+}
+
+
