@@ -38,13 +38,13 @@ const toggleMenu = ()=>{
                     <div>
                         <img
                         onClick={toggleMenu}
-                         src={hamburger} 
+                         src={ isOpen ? hamburger : iconClose} 
                          alt="hamburger-menu" />
                     </div>
                 </div>
             </div>
         </header>
-        <div className="nav-list-mobile">
+        <div className={ isOpen ? "nav-list-mobile" : "nav-list-mobile overlay"}>
             <ul>
                 <li>Product</li>
                 <li>features</li>
