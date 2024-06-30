@@ -152,6 +152,7 @@ a{
 }
 
 @media screen and (min-width: 768px) {
+   
     .mobile-menu{
         display: none;
     }
@@ -179,7 +180,6 @@ a{
 }
 
 @media screen and (min-width: 1020px) {
-
 .reverse{
     width: 85%;
     margin: 0 auto;

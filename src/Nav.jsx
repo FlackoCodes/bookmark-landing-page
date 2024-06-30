@@ -5,7 +5,7 @@ import iconClose from './images/icon-close.svg'
 
 
 function Nav() {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
 
 const toggleMenu = ()=>{
     setIsOpen(!isOpen)
