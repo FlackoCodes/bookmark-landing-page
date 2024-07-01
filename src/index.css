@@ -141,6 +141,7 @@ a{
 .n__p{
     color: hsl(0, 0%, 50%);
     text-transform: uppercase;
+    font-size: .95em;
 }
 
 .demo{
@@ -149,12 +150,16 @@ a{
 
 .demo p{
     padding-bottom: 4rem;
+    font-size: .69em;
 }
 
 @media screen and (min-width: 768px) {
-   
     .mobile-menu{
         display: none;
+    }
+
+    .overlay{
+        display: none !important;
     }
 
     nav{

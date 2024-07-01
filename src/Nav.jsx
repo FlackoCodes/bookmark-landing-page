@@ -9,6 +9,7 @@ function Nav() {
 
 const toggleMenu = ()=>{
     setIsOpen(!isOpen)
+    console.log(isOpen);
 }
 
   return (

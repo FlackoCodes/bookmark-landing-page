@@ -11,10 +11,10 @@ function Hero() {
                 <div className='h__'
                 style={styles}
                 >
-                    <p className='n__p'>
+                  <p className='n__p'>
                         <span>New</span>
                         Monograph Dashboard
-                        </p>
+                    </p>
                     <h1>Powerful insights <span className='span'>into your team </span>
                      </h1>
                     <p className='ls-p'> 
